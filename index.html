@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic Tac Toe</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe Game</h1>
+    <div class="row">
+      <input class="b1" type="button" onclick="handleClick(0, 0)">
+      <input class="b2" type="button" onclick="handleClick(0, 1)">
+      <input class="b3" type="button" onclick="handleClick(0, 2)">
+    </div>
+    <div class="row">
+      <input class="b4" type="button" onclick="handleClick(1, 0)">
+      <input class="b5" type="button" onclick="handleClick(1, 1)">
+      <input class="b6" type="button" onclick="handleClick(1, 2)">
+    </div>
+    <div class="row">
+      <input class="b7" type="button" onclick="handleClick(2, 0)">
+      <input class="b8" type="button" onclick="handleClick(2, 1)">
+      <input class="b9" type="button" onclick="handleClick(2, 2)">
+    </div>
+    <button id="resetGame">Reset Game</button>
+    <button id="toggleAI">Toggle AI</button>
+    <br>
+    <div id="aiStatus" class="ai-status">AI: Off</div>
+    <h2 class="current-player">Current Player is X.</h2>
+    <div class="x-wins"> X Wins: </div>
+    <div class="o-wins"> O Wins: </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
